@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<h2>ul 2</h2>
+
+<p>Zadaj číslo menšie ako 64:</p>
+
+<input id="vstup2">
+
+<button type="button" onclick="porovnaj2()">Potvrď!</button>
+
+<p id="vysledok2">Tu bude tvoja odpoveď</p>
+
+<script>
+function porovnaj2()
+{
+var y, koniec;
+y=document.getElementById("vstup2").value;
+
+if (y<64)
+ {
+ koniec="správne";
+ alert("správne")
+ }
+else
+ {
+ koniec="nesprávne";
+ alert("nesprávne")
+ }
+document.getElementById("vysledok2").innerHTML = koniec;
+}
+
+</script>
+</body>
+</html>

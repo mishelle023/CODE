@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<h1>TESTÍK</h1>
+<h2>ul 1</h2>
+
+<p>Zadaj číslo väčšie ako 20: </p>
+
+
+<input id="vstup">
+
+<button type="button" onclick="porovnaj()">Potvrď!</button>
+
+<p id="vysledok">Tu sa bude zobrazovať výsledok</p>
+
+<h2>ul 2</h2>
+
+<p>Zadaj číslo menšie ako 64:</p>
+
+<input id="vstup2">
+
+<button type="button" onclick="porovnaj2()">Potvrď!</button>
+
+<p id="vysledok2">Tu bude tvoja odpoveď</p>
+
+<h2>ul 3</h2>
+<p>Zadaj záporné číslo menšie ako -23</p>
+
+<input id="vstup3">
+
+<button type="button" onclick="porovnaj3()">Potvrď!</button>
+
+<p id="vysledok3">Tu bude výsledok.</p>
+
+<script>
+function porovnaj() 
+{ 
+var x, zaver;
+x=document.getElementById("vstup").value;
+
+if (x>20)
+ {
+  zaver="správne";
+  alert("správne")
+ }
+else
+ {
+  zaver="nesprávne";
+  alert("nesprávne")
+ }
+document.getElementById("vysledok").innerHTML = zaver;
+
+}
+function porovnaj2()
+{
+var y, koniec;
+y=document.getElementById("vstup2").value;
+
+if (y<64)
+ {
+ koniec="správne";
+ alert("správne")
+ }
+else
+ {
+ koniec="nesprávne";
+ alert("nesprávne")
+ }
+document.getElementById("vysledok2").innerHTML = koniec;
+}
+function porovnaj3()
+ {
+ var z, end;
+ z=document.getElementById("vstup3").value;
+
+ if (z<-23)
+ {
+  end="správne";
+  alert("správne")
+ }
+else
+ {
+  end="nesprávne";
+  alert("nesprávne")
+ }
+document.getElementById("vysledok3").innerHTML = end;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<h4>ul 3</h4>
+<p>Zadaj záporné číslo menšie ako -23</p>
+
+<input id="vstup3">
+
+<button type="button" onclick="porovnaj3()">Potvrď!</button>
+
+<p id="vysledok3">Tu bude výsledok.</p>
+
+
+<script>
+ function porovnaj3()
+ {
+ var z, end;
+ z=document.getElementById("vstup3").value;
+
+ if (z<-23)
+ {
+  end="správne";
+  alert("správne")
+ }
+else
+ {
+  end="nesprávne";
+  alert("nesprávne")
+ }
+document.getElementById("vysledok3").innerHTML = end; 
+ }
+</script>
+</body>
+</html>

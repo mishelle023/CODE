@@ -1,0 +1,29 @@
+<html>
+<head>
+<h1>Vitaj na tejto stránke!</h1>
+</head>
+<body>
+
+Meno: <input id="meno" type="text"><br><br>
+Priezvisko: <input type="text"><br><br>
+Mesto: <input type="text"><br><br>
+<button id="tlacitko" onclick="pozdravMa();">Ahoj!</button>
+
+<p id="odstavec"></p>
+<script>
+function pozdravMa(){
+var meno = document.getElementById("meno").value;
+var dlzkaMena= meno.length;
+if (dlzkaMena < 3) {
+    alert('Vaše meno je príliš krátke!');
+} else {
+    document.getElementById("odstavec").innerHTML= 'Čau, ' + meno; 
+}
+
+document.getElementById("meno").value ='';
+
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<h1>TESTÍK</h1>
+<h2>ul 1</h2>
+
+<p>Zadaj číslo väčšie ako 20: </p>
+
+
+<input id="vstup">
+
+<button type="button" onclick="porovnaj()">Potvrď!</button>
+
+<p id="vysledok">Tu sa bude zobrazovať výsledok</p>
+
+
+
+<script>
+function porovnaj() 
+{ 
+var x, zaver;
+x=document.getElementById("vstup").value;
+
+if (x>20)
+ {
+  zaver="správne";
+  alert("správne")
+ }
+else
+ {
+  zaver="nesprávne";
+  alert("nesprávne")
+ }
+document.getElementById("vysledok").innerHTML = zaver;
+
+}
+</script>
